@@ -1,81 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    
-    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
     <head>
-        <title>My Resume</title>
+        <title>Saeid's Resume</title>
     </head>
+    
     <style>
         h1{
             text-align: center;
-            color:cadetblue;
+            color:cyan;
         } 
         
-        h4{
-            
-            color: darkgoldenrod
+        h2{
+            width:165px;
+            height: auto;
+            text-align: center;
+            float:left;
+            clear:both;
+            font-size:21px;
+            color:#1b4491;
+            background-color: darkseagreen;
+        }
+      
+        #header_image{
+            background-color: dimgray;
+            height:180px;
+            border: double 2px brown;
+            border-radius: 19px;
+            padding: 2px;
+            margin: 7px;
         }
         
-        #para{
-            color: red;
-            
+        .contact{
+            color: white;
+            margin-right: 20px;
+            text-align: right;
+            position:relative;
         }
+        
+        td{
+            padding-right: 10px;
+        }
+        
+        tr:nth-child(even){
+            background: #d9d9d9;
+        }
+        
+        tr:nth-child(odd){
+            background: #f2f2f2;
+        }
+        
+        table{
+            margin-left: 200px;
+            width: auto;
+        }
+        
+        p {
+            width:85%;
+            margin-top: 3%;
+			margin-right: 50px;
+            float:right;
+            background-color:cadetblue;
+            color: blanchedalmond;
+            border-radius: 10px;
+        }
+        
+        .entry {
+            width:auto;
+            display: block;
+            padding-top:15px;
+            margin-left:4px;
+        }
+
     </style>
     
-    
     <body>
-        <h1>Saeid's Resume</h1>
-        <h3>Saeid Najdi Hejazi</h3>
-<div class="contact">
-            Phone: 720-772-7279<br />
-            Email: msnh2004@yahoo.com
-</div>
-<p id="para">
-<h4>Education </h4>
-Saint Cloud State University<br />
-Computer Science<br />
-Fall 2016 – Now<br />
-Neosho County Community College<br />
-AA Computer Information Systems<br />
-2013-2015<br />
-Azad University of Iran<br />
-Associate degree in Chemical Industries<br />
-
-<h4>Favorite Courses </h4>
-Computer Science 1 (C++)<br />
-Implemented different build-in functions and made them from scratch.<br />
-Advanced Programming Methods<br />
-Vb.net programming, Implemented websites <br />
-Microcomputers Repair<br />
-Hardware and software troubleshoot and repair<br />
-CISCO Networking<br />
-Making cables, networks<br />
-Webpage design<br />
-Studied HTML,CSS. Visual website designing<br />
-
-        <h4>Employments  </h4>
-Have 4 years of job experience in troubleshooting and fixing computers and Android phones<br />
-Have Experience in fixing computers and smartphones remotely - using remote desktop softwares<br />
-Computer software and hardware install, assembly, troubleshoot and repair<br />
-Worked for 2 years as front-end web development, and designing webpages.<br />
-
-        <h4>Skills  </h4>
-Prog. Languages: Experienced in Java, C++, VB.Net, HTML, CSS, JavaScript, Angular, jQuery, React.js<br />
-VR, TTS, APIs: Implemented voice recognition, text to speech, google maps API to the webpage<br />
-Webpage design: Used HTML, CSS, SVG and different JS libraries to make and design websites<br />
-OCR: Trained OCR and its fonts and Implemented it into software<br />
-RWD: Experienced in making dynamic webpages, implementing Responsive Web Design (RWD)<br />
-Network: Experience in computer networks, making cables, network –LAN/WAN/Routers/VPN/DNS/DHCP<br />
-Security: Experienced in Firewalls, Anti-viruses, Browsers, Windows XP,7,8,8.1,10, removing viruses manually and also by software, flash BIOS, Device drivers, Windows updates<br />
-ICDL Certificate (International Computer Driving License)<br />
-Cellphone: Android software install and repair, flashing ROMs, kernels, and …<br />
-Acquainted with audio/video devices (TV/DVD-Players/Digital Satellite Receiver)
-
-            <h4>Programming </h4>
-Java: and some of its libraries in designing webpages<br />
-C++: making its build-in functions and implemented databases<br />
-Python: Used to program robots, and their color recognition<br />
-HTML, CSS, JS: Created .Js scripts using different JavaScript libraries like React.Js, Angular.JS, jQuery,<br />
-        <p />
-    <body />
-<html />
+        <div id="header_image">
+            <h1>Resume</h1>
+            <div class="contact">
+                <h3>Saeid Najdi Hejazi</h3>
+                Phone: 720-772-7279<br />
+                Email: msnh2004@yahoo.com
+            </div>
+        </div>
+        
+        <ul id="para">
+            <h2>Education </h2>
+            <table>
+                <tr><td>Saint Cloud State University</td> <td> Computer Science </td> <td> Fall 2016-Now</td></tr>
+                <tr><td>Neosho County Community College</td> <td> AA Computer Information Systems</td> <td> 2013-2015</td></tr>
+                <tr><td>Azad University of Iran</td> <td> Associate Degree in Chemical Industries</td> </tr>        
+            </table>
+            
+            <div class="entry">
+                <h2>Favorite Courses </h2>
+                <p>
+                    - Computer Science 1 (C++)<br />
+                    - Implemented different build-in functions and made them from scratch.<br />
+                    - Advanced Programming Methods<br />
+                    Vb.net programming, Implemented websites <br />
+                    - Microcomputers Repair<br />
+                    - Hardware and Software Troubleshoot and Repair<br />
+                    - CISCO Networking<br />
+                    - Making LAN cables, Networks<br />
+                    - Webpage Design<br />
+                    - HTML,CSS. VB.Net <br />
+                </p>
+            </div>
+            
+            <div class="entry">
+                <h2>Employments  </h2>
+                <p>
+                    - 4 years of job experience in troubleshooting and fixing computers and Android phones<br />
+                    - Have Experience in fixing computers and smartphones remotely - using remote desktop softwares<br />
+                    - Computer software and hardware install, assembly, troubleshoot and repair<br />
+                    - Worked for 2 years as front-end web development, and designing webpages.<br />
+                </p>
+            </div>
+            
+            <div class="entry">
+                <h2>Skills  </h2>
+                <p>
+                    - VR, TTS APIs: Implemented voice recognition, text to speech, google maps API to the webpage<br />
+                    - Webpage design: Used HTML, CSS, SVG and different JS libraries to make and design websites<br />
+                    - OCR: Trained OCR and its fonts and Implemented it into software<br />
+                    - RWD: Experienced in making dynamic webpages, implementing Responsive Web Design (RWD)<br />
+                    - Network: Experience in computer networks, making cables, network –LAN/WAN/Routers/VPN/DNS/DHCP<br />
+                    - Security: Experienced in Firewalls, Anti-viruses, Browsers, Windows XP,7,8,8.1,10, removing viruses manually and also by software, flash BIOS, Device drivers, Windows updates<br />
+                    - ICDL Certificate (International Computer Driving License)<br />
+                    - Cellphone: Android software install and repair, flashing ROMs, kernels, and …<br />
+                    - Acquainted with audio/video devices (TV/DVD-Players/Digital Satellite Receiver)
+                </p>
+            </div>
+            
+            <div class="entry">
+                <h2>Programming Languages</h2>
+                <p>
+                    - Java<br />
+                    - Ruby, Ruby on Rails<br/>
+                    - C++: making its build-in functions and implemented databases<br />
+                    - Python: Used to program robots, and their color recognition<br />
+                    - HTML, CSS, JavaScript, and JavaScript libraries like React.Js, Angular.JS, jQuery<br />
+                </p>
+            </div>
+        </ul>
+      <script>
+		  $("p").fadeOut(0);
+		  $("table").fadeOut(0);
+		  $("#header_image").fadeOut(0);
+		  $(document).ready(function() {	
+			  	$("table").delay(1500).slideDown();
+			  	$("p").delay(1500).slideDown();
+			  	$("#header_image").fadeIn(2000);
+		  });
+			  
+      </script>
+    </body>
+</html>
